@@ -1,0 +1,85 @@
+.feed-container{
+    /* width: 100%;
+    height: 10vh; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.nav-icons{
+    margin: 0.5rem;
+    color: black;
+}
+.nav-icon-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.upload-btn{
+    width:15rem;
+    height: 10vh;
+}
+.videos-container{
+    height: 80vh;
+    width:20rem;
+    border-radius: 15px;
+    /* border: 1px solid black; */
+    overflow-y: scroll;
+    scrollbar-width: 0;
+    position: relative;
+}
+.videos-container::-webkit-scrollbar{
+    display: none;
+}
+.post-container{
+    height: 80vh;
+    width:20rem;
+    margin-bottom: 0.5rem;
+}
+.post-container > video{
+    height: 80vh;
+    width: 20rem;
+    object-fit: contain;
+    background-color: cadetblue;
+    border-radius: 15px;
+}
+.videos-info{
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.avatar_container{
+    display: flex;
+    justify-content: flex-start;
+    width: 70%;
+}
+.avatar_container > p{
+    margin-left: 0.7rem;
+}
+.post-like
+{
+    height: 3rem;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+}
+
+@media only screen and (max-width:400px)
+{
+    .avatar_container{
+        padding-left: 1rem;
+    }
+}
